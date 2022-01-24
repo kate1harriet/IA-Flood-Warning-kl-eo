@@ -3,7 +3,7 @@ from floodsystem.stationdata import build_station_list
 
 def run():
     stations = build_station_list
-    ret = stations_within_radius(stations, 52.2053, 0.1218, 10)
+    ret = stations_within_radius(stations, (52.2053, 0.1218), 10)
     return ret
 
 print (run())
